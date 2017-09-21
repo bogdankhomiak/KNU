@@ -1,0 +1,2641 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	204)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"551926AC038E"
+    enforceClosureAutoLoad 	FALSE
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	0
+	gridY      	0
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    charSet    	204
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"551926AC0390"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "Аеропорт"
+		quid       	"55192A84018F"
+		stereotype 	"Actor")
+	    (object Class "Клієнт"
+		quid       	"55192DFB02D2"
+		stereotype 	"Actor")
+	    (object Class "Працівники"
+		quid       	"55192EDC0051"
+		stereotype 	"Actor")
+	    (object UseCase "Каса"
+		quid       	"55192CC0036D")
+	    (object UseCase "Диспетчерська служба"
+		quid       	"55192CC3035A")
+	    (object UseCase "Тех.обслуговування"
+		quid       	"55192CC60136")
+	    (object UseCase "Зал очікування"
+		quid       	"55192CC9003D")
+	    (object UseCase "Завантаження багажу"
+		quid       	"55192CCD007B")
+	    (object UseCase "Авіакомпанії"
+		quid       	"55192DA702C1")
+	    (object UseCase "Бухгалтерія"
+		quid       	"55192E740285")
+	    (object Association "$UNNAMED$0"
+		quid       	"55192EA0035B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"55192EA3028D"
+			supplier   	"Use Case View::Каса"
+			quidu      	"55192CC0036D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"55192EA3028F"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$3"
+		quid       	"55192EA803E5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"55192EAA01D1"
+			supplier   	"Use Case View::Диспетчерська служба"
+			quidu      	"55192CC3035A"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"55192EAA01D3"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$6"
+		quid       	"55192EAE02E5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"55192EAF0316"
+			supplier   	"Use Case View::Завантаження багажу"
+			quidu      	"55192CCD007B"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"55192EAF0318"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$9"
+		quid       	"55192EB201DA"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"55192EB301C4"
+			supplier   	"Use Case View::Тех.обслуговування"
+			quidu      	"55192CC60136"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"55192EB301C6"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$12"
+		quid       	"55192EB60028"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"55192EB7018B"
+			supplier   	"Use Case View::Бухгалтерія"
+			quidu      	"55192E740285"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"55192EB7018D"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$15"
+		quid       	"55192EBB00A1"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"55192EBC0041"
+			supplier   	"Use Case View::Авіакомпанії"
+			quidu      	"55192DA702C1"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"55192EBC0043"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$18"
+		quid       	"55192EBF0195"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"55192EC00257"
+			supplier   	"Use Case View::Зал очікування"
+			quidu      	"55192CC9003D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"55192EC00259"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F")))
+	    (object Association "$UNNAMED$21"
+		quid       	"55192EC50324"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$22"
+			quid       	"55192EC7006E"
+			supplier   	"Use Case View::Каса"
+			quidu      	"55192CC0036D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$23"
+			quid       	"55192EC7007F"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"55192DFB02D2")))
+	    (object Association "$UNNAMED$24"
+		quid       	"55192ECE0113"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$25"
+			quid       	"55192ECF0313"
+			supplier   	"Use Case View::Завантаження багажу"
+			quidu      	"55192CCD007B"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$26"
+			quid       	"55192ECF0315"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"55192DFB02D2")))
+	    (object Association "$UNNAMED$27"
+		quid       	"55192ED2025A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$28"
+			quid       	"55192ED40038"
+			supplier   	"Use Case View::Зал очікування"
+			quidu      	"55192CC9003D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$29"
+			quid       	"55192ED4003A"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"55192DFB02D2")))
+	    (object Association "$UNNAMED$30"
+		quid       	"55192EE803B5"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$31"
+			quid       	"55192EEA0274"
+			supplier   	"Use Case View::Працівники"
+			quidu      	"55192EDC0051"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$32"
+			quid       	"55192EEA0276"
+			supplier   	"Use Case View::Бухгалтерія"
+			quidu      	"55192E740285")))
+	    (object Mechanism @1
+		logical_models 	(list unit_reference_list
+		    (object Object "$UNNAMED$33"
+			quid       	"553E3448005E"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"553E354700AA"
+				supplier   	"Каса"
+				quidu      	"553E34540128"
+				messages   	(list Messages
+				    (object Message "Замовлення білету"
+					quid       	"553E354700AB"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1"
+					ordinal    	0
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Видача білету"
+					quid       	"553E36CC03C3"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"2"
+					ordinal    	1
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E354E01A7"
+				supplier   	"Завантаження багажу"
+				quidu      	"553E345603A1"
+				messages   	(list Messages
+				    (object Message "Завантаження багажу"
+					quid       	"553E354E01A8"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"3"
+					ordinal    	2
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Повернення багажу"
+					quid       	"553E371C015F"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"4"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E3555027B"
+				supplier   	"Зал очікування"
+				quidu      	"553E34590019"
+				messages   	(list Messages
+				    (object Message "Очікування літака"
+					quid       	"553E3555027C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"5"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Клієнт"
+			quidu      	"55192DFB02D2"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Каса"
+			quid       	"553E34540128"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Завантаження багажу"
+			quid       	"553E345603A1"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Зал очікування"
+			quid       	"553E34590019"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)))
+	    (object Mechanism @2
+		logical_models 	(list unit_reference_list
+		    (object Object "$UNNAMED$34"
+			quid       	"553E37A8024E"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"553E38410010"
+				supplier   	"Каса"
+				quidu      	"553E37BF021A"
+				messages   	(list Messages
+				    (object Message "Кількість білетів"
+					quid       	"553E38410011"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1"
+					ordinal    	0
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E384601C1"
+				supplier   	"Завантаження багажу"
+				quidu      	"553E37C100E3"
+				messages   	(list Messages
+				    (object Message "Кількість вантажу"
+					quid       	"553E384601C2"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"2"
+					ordinal    	1
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E38490332"
+				supplier   	"Зал очікування"
+				quidu      	"553E37C3025C"
+				messages   	(list Messages
+				    (object Message "Кількість пасажирів"
+					quid       	"553E38490333"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"3"
+					ordinal    	2
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E384E0152"
+				supplier   	"Диспетчерська служба"
+				quidu      	"553E37C50184"
+				messages   	(list Messages
+				    (object Message "Очікування дозволу на виліт"
+					quid       	"553E384E0153"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"4"
+					ordinal    	3
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Дозвіл на виліт"
+					quid       	"5553768000C2"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"4.1"
+					ordinal    	4
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E385203B0"
+				supplier   	"Тех. обслуговування"
+				quidu      	"553E37C7025E"
+				messages   	(list Messages
+				    (object Message "Перевірка або ремонт літака"
+					quid       	"553E385203B1"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"5"
+					ordinal    	5
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Звіт після перевірки"
+					quid       	"5553769A03A9"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"5.1"
+					ordinal    	6
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E385901FB"
+				supplier   	"Бухгалтерія"
+				quidu      	"553E37CC0256"
+				messages   	(list Messages
+				    (object Message "Обрахунок бухгалтерських обліків по наданим послугам"
+					quid       	"553E385901FC"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"6"
+					ordinal    	7
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Готовий звіт"
+					quid       	"555376B30131"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"6.1"
+					ordinal    	8
+					quidu      	"000000000000"
+					creation   	FALSE)))
+			    (object Link
+				quid       	"553E386101A3"
+				supplier   	"Авіакомпанії"
+				quidu      	"553E37D701C5"
+				messages   	(list Messages
+				    (object Message "Замовлення літаків"
+					quid       	"553E386101A4"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"7"
+					ordinal    	9
+					quidu      	"000000000000"
+					creation   	FALSE)
+				    (object Message "Замовлені літаки"
+					quid       	"555376C70159"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"ToClientFromSupplier"
+					sequence   	"7.1"
+					ordinal    	10
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			class      	"Use Case View::Аеропорт"
+			quidu      	"55192A84018F"
+			persistence 	"Transient"
+			creationObj 	TRUE
+			multi      	FALSE)
+		    (object Object "Каса"
+			quid       	"553E37BF021A"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Завантаження багажу"
+			quid       	"553E37C100E3"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Зал очікування"
+			quid       	"553E37C3025C"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Диспетчерська служба"
+			quid       	"553E37C50184"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Тех. обслуговування"
+			quid       	"553E37C7025E"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Бухгалтерія"
+			quid       	"553E37CC0256"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Авіакомпанії"
+			quid       	"553E37D701C5"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)))
+	    (object Mechanism @3
+		logical_models 	(list unit_reference_list
+		    (object Object "$UNNAMED$35"
+			quid       	"553E39D70104"
+			class      	"Use Case View::Працівники"
+			quidu      	"55192EDC0051"
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE)
+		    (object Object "Бухгалтерія"
+			quid       	"553E39DF007E"
+			collaborators 	(list link_list
+			    (object Link
+				quid       	"553E39EC002B"
+				supplier   	"$UNNAMED$35"
+				quidu      	"553E39D70104"
+				messages   	(list Messages
+				    (object Message "Видача зарплати"
+					quid       	"553E39EC002C"
+					frequency  	"Aperiodic"
+					synchronization 	"Simple"
+					dir        	"FromClientToSupplier"
+					sequence   	"1"
+					ordinal    	0
+					quidu      	"000000000000"
+					creation   	FALSE))))
+			persistence 	"Transient"
+			creationObj 	FALSE
+			multi      	FALSE))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"551926AD016E"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object ClassView "Class" "Use Case View::Клієнт" @4
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(350, 350)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@4
+			    location   	(350, 510)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Клієнт")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"55192DFB02D2"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Диспетчерська служба" @5
+			location   	(1724, 321)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@5
+			    location   	(1724, 459)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Диспетчерська служба")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192CC3035A"
+			height     	118)
+		    (object UseCaseView "Use Case View::Тех.обслуговування" @6
+			location   	(1924, 765)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@6
+			    location   	(1924, 903)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Тех.обслуговування")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192CC60136"
+			height     	118)
+		    (object UseCaseView "Use Case View::Авіакомпанії" @7
+			location   	(1281, 1253)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@7
+			    location   	(1281, 1391)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Авіакомпанії")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192DA702C1"
+			height     	118)
+		    (object UseCaseView "Use Case View::Каса" @8
+			location   	(1018, 246)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@8
+			    location   	(1018, 384)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Каса")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192CC0036D"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$21" @9
+			location   	(657, 298)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EC50324"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$22" @10
+				Parent_View 	@9
+				location   	(307, -52)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EC7006E"
+				client     	@9
+				supplier   	@8
+				vertices   	(list Points
+				    (657, 298)
+				    (907, 260))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$23" @11
+				Parent_View 	@9
+				location   	(307, -52)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EC7007F"
+				client     	@9
+				supplier   	@4
+				vertices   	(list Points
+				    (657, 298)
+				    (407, 336))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Завантаження багажу" @12
+			location   	(762, 637)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@12
+			    location   	(762, 775)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Завантаження багажу")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192CCD007B"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$24" @13
+			location   	(543, 484)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192ECE0113"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$25" @14
+				Parent_View 	@13
+				location   	(193, 134)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192ECF0313"
+				client     	@13
+				supplier   	@12
+				vertices   	(list Points
+				    (543, 484)
+				    (679, 579))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$26" @15
+				Parent_View 	@13
+				location   	(193, 134)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192ECF0315"
+				client     	@13
+				supplier   	@4
+				vertices   	(list Points
+				    (543, 484)
+				    (407, 388))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Зал очікування" @16
+			location   	(775, 1068)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@16
+			    location   	(775, 1206)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Зал очікування")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192CC9003D"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$27" @17
+			location   	(576, 736)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192ED2025A"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$28" @18
+				Parent_View 	@17
+				location   	(226, 386)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192ED40038"
+				client     	@17
+				supplier   	@16
+				vertices   	(list Points
+				    (576, 736)
+				    (738, 1009))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$29" @19
+				Parent_View 	@17
+				location   	(226, 386)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192ED4003A"
+				client     	@17
+				supplier   	@4
+				vertices   	(list Points
+				    (576, 736)
+				    (436, 499))
+				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Аеропорт" @20
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1308, 800)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@20
+			    location   	(1308, 960)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Аеропорт")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"55192A84018F"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$3" @21
+			location   	(1474, 606)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EA803E5"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @22
+				Parent_View 	@21
+				location   	(166, -194)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EAA01D1"
+				client     	@21
+				supplier   	@5
+				vertices   	(list Points
+				    (1474, 606)
+				    (1582, 484))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @23
+				Parent_View 	@21
+				location   	(166, -194)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EAA01D3"
+				client     	@21
+				supplier   	@20
+				vertices   	(list Points
+				    (1474, 606)
+				    (1365, 728))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$9" @24
+			location   	(1588, 781)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EB201DA"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$10" @25
+				Parent_View 	@24
+				location   	(280, -19)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EB301C4"
+				client     	@24
+				supplier   	@6
+				vertices   	(list Points
+				    (1588, 781)
+				    (1814, 768))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$11" @26
+				Parent_View 	@24
+				location   	(280, -19)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EB301C6"
+				client     	@24
+				supplier   	@20
+				vertices   	(list Points
+				    (1588, 781)
+				    (1365, 793))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$15" @27
+			location   	(1288, 1090)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EBB00A1"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$16" @28
+				Parent_View 	@27
+				location   	(-20, 290)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EBC0041"
+				client     	@27
+				supplier   	@7
+				vertices   	(list Points
+				    (1288, 1090)
+				    (1282, 1195))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$17" @29
+				Parent_View 	@27
+				location   	(-20, 290)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EBC0043"
+				client     	@27
+				supplier   	@20
+				vertices   	(list Points
+				    (1288, 1090)
+				    (1292, 985))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$0" @30
+			location   	(1166, 532)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EA0035B"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @31
+				Parent_View 	@30
+				location   	(-142, -268)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EA3028D"
+				client     	@30
+				supplier   	@8
+				vertices   	(list Points
+				    (1166, 532)
+				    (1100, 409))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @32
+				Parent_View 	@30
+				location   	(-142, -268)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EA3028F"
+				client     	@30
+				supplier   	@20
+				vertices   	(list Points
+				    (1166, 532)
+				    (1265, 720))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$6" @33
+			location   	(1111, 738)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EAE02E5"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @34
+				Parent_View 	@33
+				location   	(-197, -62)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EAF0316"
+				client     	@33
+				supplier   	@12
+				vertices   	(list Points
+				    (1111, 738)
+				    (762, 637))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @35
+				Parent_View 	@33
+				location   	(-197, -62)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EAF0318"
+				client     	@33
+				supplier   	@20
+				vertices   	(list Points
+				    (1111, 738)
+				    (1249, 780))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$18" @36
+			location   	(1064, 918)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EBF0195"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$19" @37
+				Parent_View 	@36
+				location   	(-244, 118)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EC00257"
+				client     	@36
+				supplier   	@16
+				vertices   	(list Points
+				    (1064, 918)
+				    (877, 1010))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$20" @38
+				Parent_View 	@36
+				location   	(-244, 118)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EC00259"
+				client     	@36
+				supplier   	@20
+				vertices   	(list Points
+				    (1064, 918)
+				    (1247, 827))
+				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Працівники" @39
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(2157, 1219)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@39
+			    location   	(2157, 1379)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Працівники")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"55192EDC0051"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object UseCaseView "Use Case View::Бухгалтерія" @40
+			location   	(1709, 1175)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@40
+			    location   	(1709, 1313)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Бухгалтерія")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"55192E740285"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$12" @41
+			location   	(1504, 985)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EB60028"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$13" @42
+				Parent_View 	@41
+				location   	(196, 185)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EB7018B"
+				client     	@41
+				supplier   	@40
+				vertices   	(list Points
+				    (1504, 985)
+				    (1643, 1115))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$14" @43
+				Parent_View 	@41
+				location   	(196, 185)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EB7018D"
+				client     	@41
+				supplier   	@20
+				vertices   	(list Points
+				    (1504, 985)
+				    (1394, 881))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$30" @44
+			location   	(1957, 1197)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"55192EE803B5"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$31" @45
+				Parent_View 	@44
+				location   	(248, 22)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EEA0274"
+				client     	@44
+				supplier   	@39
+				vertices   	(list Points
+				    (1957, 1197)
+				    (2097, 1211))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$32" @46
+				Parent_View 	@44
+				location   	(248, 22)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"55192EEA0276"
+				client     	@44
+				supplier   	@40
+				vertices   	(list Points
+				    (1957, 1197)
+				    (1817, 1183))
+				line_style 	0)))))
+	    (object InteractionDiagram "NewDiagram"
+		mechanism_ref 	@1
+		quid       	"553E342201F4"
+		title      	"NewDiagram"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object InterObjView "$UNNAMED$33" @47
+			location   	(213, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@47
+			    location   	(213, 250)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	360
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E3448005E"
+			width      	120
+			height     	794
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @48
+			    location   	(213, 361)
+			    line_color 	3342489
+			    InterObjView 	@47
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @49
+			    location   	(213, 488)
+			    line_color 	3342489
+			    InterObjView 	@47
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @50
+			    location   	(213, 608)
+			    line_color 	3342489
+			    InterObjView 	@47
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @51
+			    location   	(213, 719)
+			    line_color 	3342489
+			    InterObjView 	@47
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @52
+			    location   	(213, 839)
+			    line_color 	3342489
+			    InterObjView 	@47
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Каса" @53
+			location   	(653, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@53
+			    location   	(653, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Каса")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E34540128"
+			width      	300
+			height     	794
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @54
+			    location   	(653, 361)
+			    line_color 	3342489
+			    InterObjView 	@53
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @55
+			    location   	(653, 488)
+			    line_color 	3342489
+			    InterObjView 	@53
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Завантаження багажу" @56
+			location   	(1184, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@56
+			    location   	(1184, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Завантаження багажу")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E345603A1"
+			width      	300
+			height     	794
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @57
+			    location   	(1184, 608)
+			    line_color 	3342489
+			    InterObjView 	@56
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @58
+			    location   	(1184, 719)
+			    line_color 	3342489
+			    InterObjView 	@56
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Зал очікування" @59
+			location   	(1812, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@59
+			    location   	(1812, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Зал очікування")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E34590019"
+			width      	300
+			height     	794
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @60
+			    location   	(1812, 839)
+			    line_color 	3342489
+			    InterObjView 	@59
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "Замовлення білету" @61
+			location   	(0, 361)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @62
+			    Parent_View 	@61
+			    location   	(432, 317)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E354700AB"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	410
+			    justify    	0
+			    label      	"Замовлення білету"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@47
+			supplier   	@53
+			Focus_Src  	@48
+			Focus_Entry 	@54
+			origin     	(228, 361)
+			terminus   	(637, 361)
+			ordinal    	0)
+		    (object InterMessView "Завантаження багажу" @63
+			location   	(0, 608)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @64
+			    Parent_View 	@63
+			    location   	(698, 564)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E354E01A8"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	466
+			    justify    	0
+			    label      	"Завантаження багажу"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@47
+			supplier   	@56
+			Focus_Src  	@50
+			Focus_Entry 	@57
+			origin     	(228, 608)
+			terminus   	(1168, 608)
+			ordinal    	2)
+		    (object InterMessView "Очікування літака" @65
+			location   	(0, 839)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @66
+			    Parent_View 	@65
+			    location   	(1012, 795)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E3555027C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"Очікування літака"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@47
+			supplier   	@59
+			Focus_Src  	@52
+			Focus_Entry 	@60
+			origin     	(228, 839)
+			terminus   	(1796, 839)
+			ordinal    	4)
+		    (object InterMessView "Видача білету" @67
+			location   	(0, 488)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @68
+			    Parent_View 	@67
+			    location   	(433, 444)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E36CC03C3"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	322
+			    justify    	0
+			    label      	"Видача білету"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@53
+			supplier   	@47
+			Focus_Src  	@55
+			Focus_Entry 	@49
+			origin     	(637, 488)
+			terminus   	(229, 488)
+			ordinal    	1)
+		    (object InterMessView "Повернення багажу" @69
+			location   	(0, 719)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @70
+			    Parent_View 	@69
+			    location   	(699, 675)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E371C015F"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	425
+			    justify    	0
+			    label      	"Повернення багажу"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@56
+			supplier   	@47
+			Focus_Src  	@58
+			Focus_Entry 	@51
+			origin     	(1168, 719)
+			terminus   	(229, 719)
+			ordinal    	3)))
+	    (object InteractionDiagram "NewDiagram2"
+		mechanism_ref 	@2
+		quid       	"553E379E012C"
+		title      	"NewDiagram2"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	94
+		items      	(list diagram_item_list
+		    (object InterObjView "$UNNAMED$34" @71
+			location   	(206, 313)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@71
+			    location   	(206, 338)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	360
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37A8024E"
+			width      	120
+			height     	1532
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @72
+			    location   	(206, 393)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @73
+			    location   	(206, 513)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @74
+			    location   	(206, 629)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @75
+			    location   	(206, 748)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @76
+			    location   	(206, 885)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	165
+			    y_coord    	75
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @77
+			    location   	(206, 990)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @78
+			    location   	(206, 1110)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	165
+			    y_coord    	75
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @79
+			    location   	(206, 1215)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @80
+			    location   	(206, 1335)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	165
+			    y_coord    	75
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @81
+			    location   	(206, 1440)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @82
+			    location   	(206, 1560)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	165
+			    y_coord    	75
+			    Nested     	FALSE)
+			Focus_Of_Control 	(object Focus_Of_Control "" @83
+			    location   	(206, 1665)
+			    line_color 	3342489
+			    InterObjView 	@71
+			    height     	90
+			    y_coord    	0
+			    Nested     	TRUE))
+		    (object InterObjView "Каса" @84
+			location   	(613, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@84
+			    location   	(613, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Каса")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37BF021A"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @85
+			    location   	(613, 513)
+			    line_color 	3342489
+			    InterObjView 	@84
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Завантаження багажу" @86
+			location   	(973, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@86
+			    location   	(973, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Завантаження багажу")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37C100E3"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @87
+			    location   	(973, 629)
+			    line_color 	3342489
+			    InterObjView 	@86
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Зал очікування" @88
+			location   	(1333, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@88
+			    location   	(1333, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Зал очікування")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37C3025C"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @89
+			    location   	(1333, 748)
+			    line_color 	3342489
+			    InterObjView 	@88
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Диспетчерська служба" @90
+			location   	(1693, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@90
+			    location   	(1693, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Диспетчерська служба")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37C50184"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @91
+			    location   	(1693, 885)
+			    line_color 	3342489
+			    InterObjView 	@90
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "Тех. обслуговування" @92
+			location   	(2066, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@92
+			    location   	(2066, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	308
+			    justify    	0
+			    label      	"Тех. обслуговування")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37C7025E"
+			width      	326
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @93
+			    location   	(2066, 1110)
+			    line_color 	3342489
+			    InterObjView 	@92
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "Бухгалтерія" @94
+			location   	(2439, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@94
+			    location   	(2439, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Бухгалтерія")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37CC0256"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @95
+			    location   	(2439, 1335)
+			    line_color 	3342489
+			    InterObjView 	@94
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterObjView "Авіакомпанії" @96
+			location   	(2799, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@96
+			    location   	(2799, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Авіакомпанії")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E37D701C5"
+			width      	300
+			height     	1620
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @97
+			    location   	(2799, 1560)
+			    line_color 	3342489
+			    InterObjView 	@96
+			    height     	195
+			    y_coord    	105
+			    Nested     	FALSE))
+		    (object InterMessView "Кількість білетів" @98
+			location   	(0, 513)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @99
+			    Parent_View 	@98
+			    location   	(409, 469)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E38410011"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	360
+			    justify    	0
+			    label      	"Кількість білетів"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@84
+			Focus_Src  	@73
+			Focus_Entry 	@85
+			origin     	(221, 513)
+			terminus   	(597, 513)
+			ordinal    	0)
+		    (object InterMessView "Кількість вантажу" @100
+			location   	(0, 629)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @101
+			    Parent_View 	@100
+			    location   	(589, 585)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E384601C2"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	391
+			    justify    	0
+			    label      	"Кількість вантажу"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@86
+			Focus_Src  	@74
+			Focus_Entry 	@87
+			origin     	(221, 629)
+			terminus   	(957, 629)
+			ordinal    	1)
+		    (object InterMessView "Кількість пасажирів" @102
+			location   	(0, 748)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @103
+			    Parent_View 	@102
+			    location   	(769, 704)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E38490333"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	429
+			    justify    	0
+			    label      	"Кількість пасажирів"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@88
+			Focus_Src  	@75
+			Focus_Entry 	@89
+			origin     	(221, 748)
+			terminus   	(1317, 748)
+			ordinal    	2)
+		    (object InterMessView "Очікування дозволу на виліт" @104
+			location   	(0, 885)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @105
+			    Parent_View 	@104
+			    location   	(949, 841)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E384E0153"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	598
+			    justify    	0
+			    label      	"Очікування дозволу на виліт"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@90
+			Focus_Src  	@76
+			Focus_Entry 	@91
+			origin     	(221, 885)
+			terminus   	(1677, 885)
+			ordinal    	3)
+		    (object InterMessView "Перевірка або ремонт літака" @106
+			location   	(0, 1110)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @107
+			    Parent_View 	@106
+			    location   	(1135, 1066)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E385203B1"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	594
+			    justify    	0
+			    label      	"Перевірка або ремонт літака"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@92
+			Focus_Src  	@78
+			Focus_Entry 	@93
+			origin     	(221, 1110)
+			terminus   	(2050, 1110)
+			ordinal    	5)
+		    (object InterMessView "Обрахунок бухгалтерських обліків по наданим послугам" @108
+			location   	(0, 1335)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @109
+			    Parent_View 	@108
+			    location   	(1322, 1291)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E385901FC"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	1126
+			    justify    	0
+			    label      	"Обрахунок бухгалтерських обліків по наданим послугам"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@94
+			Focus_Src  	@80
+			Focus_Entry 	@95
+			origin     	(221, 1335)
+			terminus   	(2423, 1335)
+			ordinal    	7)
+		    (object InterMessView "Замовлення літаків" @110
+			location   	(0, 1560)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @111
+			    Parent_View 	@110
+			    location   	(1502, 1516)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E386101A4"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	431
+			    justify    	0
+			    label      	"Замовлення літаків"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	0)
+			line_color 	3342489
+			client     	@71
+			supplier   	@96
+			Focus_Src  	@82
+			Focus_Entry 	@97
+			origin     	(221, 1560)
+			terminus   	(2783, 1560)
+			ordinal    	9)
+		    (object InterMessView "Дозвіл на виліт" @112
+			location   	(0, 990)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @113
+			    Parent_View 	@112
+			    location   	(950, 946)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5553768000C2"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	341
+			    justify    	0
+			    label      	"Дозвіл на виліт"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@90
+			supplier   	@71
+			Focus_Src  	@91
+			Focus_Entry 	@77
+			origin     	(1677, 990)
+			terminus   	(222, 990)
+			ordinal    	4)
+		    (object InterMessView "Звіт після перевірки" @114
+			location   	(0, 1215)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @115
+			    Parent_View 	@114
+			    location   	(1136, 1171)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"5553769A03A9"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	435
+			    justify    	0
+			    label      	"Звіт після перевірки"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@92
+			supplier   	@71
+			Focus_Src  	@93
+			Focus_Entry 	@79
+			origin     	(2050, 1215)
+			terminus   	(222, 1215)
+			ordinal    	6)
+		    (object InterMessView "Готовий звіт" @116
+			location   	(0, 1440)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @117
+			    Parent_View 	@116
+			    location   	(1323, 1396)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"555376B30131"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	282
+			    justify    	0
+			    label      	"Готовий звіт"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@94
+			supplier   	@71
+			Focus_Src  	@95
+			Focus_Entry 	@81
+			origin     	(2423, 1440)
+			terminus   	(222, 1440)
+			ordinal    	8)
+		    (object InterMessView "Замовлені літаки" @118
+			location   	(0, 1665)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @119
+			    Parent_View 	@118
+			    location   	(1503, 1621)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"555376C70159"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	395
+			    justify    	0
+			    label      	"Замовлені літаки"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@96
+			supplier   	@71
+			Focus_Src  	@97
+			Focus_Entry 	@83
+			origin     	(2783, 1665)
+			terminus   	(222, 1665)
+			ordinal    	10)))
+	    (object InteractionDiagram "NewDiagram3"
+		mechanism_ref 	@3
+		quid       	"553E39CD03C0"
+		title      	"NewDiagram3"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list
+		    (object InterObjView "$UNNAMED$35" @120
+			location   	(219, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@120
+			    location   	(219, 250)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	360
+			    justify    	0
+			    label      	"")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E39D70104"
+			width      	120
+			height     	296
+			icon_height 	162
+			icon_width 	120
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @121
+			    location   	(219, 341)
+			    line_color 	3342489
+			    InterObjView 	@120
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterObjView "Бухгалтерія" @122
+			location   	(725, 225)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	TRUE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@122
+			    location   	(725, 225)
+			    fill_color 	13434879
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	282
+			    justify    	0
+			    label      	"Бухгалтерія")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"553E39DF007E"
+			width      	300
+			height     	296
+			icon_height 	0
+			icon_width 	0
+			icon_y_offset 	0
+			annotation 	1
+			Focus_Of_Control 	(object Focus_Of_Control "" @123
+			    location   	(725, 341)
+			    line_color 	3342489
+			    InterObjView 	@122
+			    height     	90
+			    y_coord    	0
+			    Nested     	FALSE))
+		    (object InterMessView "Видача зарплати" @124
+			location   	(0, 341)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object SegLabel @125
+			    Parent_View 	@124
+			    location   	(472, 297)
+			    font       	(object Font
+				size       	10
+				face       	"Arial"
+				charSet    	204
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    quidu      	"553E39EC002C"
+			    anchor_loc 	1
+			    nlines     	1
+			    max_width  	379
+			    justify    	0
+			    label      	"Видача зарплати"
+			    pctDist    	0.500000
+			    height     	45
+			    orientation 	1)
+			line_color 	3342489
+			client     	@122
+			supplier   	@120
+			Focus_Src  	@123
+			Focus_Entry 	@121
+			origin     	(709, 341)
+			terminus   	(235, 341)
+			ordinal    	0)))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"551926AC038F"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"551926AC0391"
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"551926AD016F"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	-6
+		origin_y   	31
+		items      	(list diagram_item_list))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"551926AC0391"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"551926AD016D"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list)))
+	category   	"Logical View"
+	quidu      	"551926AC038F")
+    process_structure 	(object Processes
+	quid       	"551926AC0392"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"551926AC0394"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"551926AC0393"))

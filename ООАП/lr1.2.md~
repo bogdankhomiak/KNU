@@ -1,0 +1,786 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	204)
+
+(object Design "Logical View"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"59BD1A820280"
+    enforceClosureAutoLoad 	FALSE
+    defaults   	(object defaults
+	rightMargin 	0.250000
+	leftMargin 	0.250000
+	topMargin  	0.250000
+	bottomMargin 	0.500000
+	pageOverlap 	0.250000
+	clipIconLabels 	TRUE
+	autoResize 	TRUE
+	snapToGrid 	TRUE
+	gridX      	0
+	gridY      	0
+	defaultFont 	(object Font
+	    size       	10
+	    face       	"Arial"
+	    charSet    	204
+	    bold       	FALSE
+	    italics    	FALSE
+	    underline  	FALSE
+	    strike     	FALSE
+	    color      	0
+	    default_color 	TRUE)
+	showMessageNum 	3
+	showClassOfObject 	TRUE
+	notation   	"Unified")
+    root_usecase_package 	(object Class_Category "Use Case View"
+	quid       	"59BD1A820282"
+	exportControl 	"Public"
+	global     	TRUE
+	logical_models 	(list unit_reference_list
+	    (object Class "Клієнт"
+		quid       	"59BD1D8602FD"
+		stereotype 	"Actor")
+	    (object Class "Аеропорт"
+		quid       	"59BD1F6D0396"
+		stereotype 	"Actor")
+	    (object Class "Працівник"
+		quid       	"59BD1FC8023E"
+		stereotype 	"Actor")
+	    (object UseCase "Замовлення квитка і інформація про рейси"
+		quid       	"59BD1EF9039D"
+		external_docs 	(list external_doc_list
+		    (object external_doc
+			external_doc_path 	"C:\\Bogdan Khomiak\\KNU\\ООАіП\\Замовлення квитка і інформація про рейс.txt")))
+	    (object UseCase "Завантаження багажу"
+		quid       	"59BD1F0800ED"
+		external_docs 	(list external_doc_list
+		    (object external_doc
+			external_doc_path 	"D:\\H.B\\ХНУ 2017\\ООАіП\\Завантаження багажу.txt")))
+	    (object UseCase "Очікування рейсу"
+		quid       	"59BD1F14001E"
+		external_docs 	(list external_doc_list
+		    (object external_doc
+			external_doc_path 	"C:\\Bogdan Khomiak\\KNU\\ООАіП\\Очікування рейсу.txt")))
+	    (object UseCase "Замовлення квитка"
+		quid       	"59BFCA50003F")
+	    (object UseCase "Ініціалізація"
+		quid       	"59BFCB2E0337")
+	    (object Association "$UNNAMED$0"
+		quid       	"59BD20860220"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$1"
+			quid       	"59BD208700C4"
+			supplier   	"Use Case View::Замовлення квитка і інформація про рейси"
+			quidu      	"59BD1EF9039D"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$2"
+			quid       	"59BD208700C6"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"59BD1D8602FD")))
+	    (object Association "$UNNAMED$3"
+		quid       	"59BD2088025F"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$4"
+			quid       	"59BD208900B4"
+			supplier   	"Use Case View::Завантаження багажу"
+			quidu      	"59BD1F0800ED"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$5"
+			quid       	"59BD208900B6"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"59BD1D8602FD")))
+	    (object Association "$UNNAMED$6"
+		quid       	"59BD208A0307"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$7"
+			quid       	"59BD208B015C"
+			supplier   	"Use Case View::Очікування рейсу"
+			quidu      	"59BD1F14001E"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$8"
+			quid       	"59BD208B015E"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"59BD1D8602FD")))
+	    (object Association "$UNNAMED$9"
+		quid       	"59BD208E0137"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$10"
+			quid       	"59BD208F0023"
+			supplier   	"Use Case View::Замовлення квитка і інформація про рейси"
+			quidu      	"59BD1EF9039D"
+			client_cardinality 	(value cardinality "0..*")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$11"
+			quid       	"59BD208F0025"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			client_cardinality 	(value cardinality "1"))))
+	    (object Association "$UNNAMED$12"
+		quid       	"59BD20900350"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$13"
+			quid       	"59BD209102EC"
+			supplier   	"Use Case View::Завантаження багажу"
+			quidu      	"59BD1F0800ED"
+			client_cardinality 	(value cardinality "0..*")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$14"
+			quid       	"59BD209102EE"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			client_cardinality 	(value cardinality "1"))))
+	    (object Association "$UNNAMED$15"
+		quid       	"59BD20930218"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$16"
+			quid       	"59BD2094011C"
+			supplier   	"Use Case View::Очікування рейсу"
+			quidu      	"59BD1F14001E"
+			client_cardinality 	(value cardinality "0..*")
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$17"
+			quid       	"59BD2094011E"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			client_cardinality 	(value cardinality "1"))))
+	    (object Association "$UNNAMED$18"
+		quid       	"59BFCA640030"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$19"
+			quid       	"59BFCA6501C4"
+			supplier   	"Use Case View::Замовлення квитка"
+			quidu      	"59BFCA50003F"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$20"
+			quid       	"59BFCA6501C6"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"59BD1D8602FD")))
+	    (object Association "$UNNAMED$21"
+		quid       	"59BFCA6A014B"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$22"
+			quid       	"59BFCA6B02DF"
+			supplier   	"Use Case View::Замовлення квитка"
+			quidu      	"59BFCA50003F"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$23"
+			quid       	"59BFCA6B02E1"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396")))
+	    (object Association "$UNNAMED$24"
+		quid       	"59BFCAE7017A"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$25"
+			quid       	"59BFCAE801F8"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$26"
+			quid       	"59BFCAE801FF"
+			supplier   	"Use Case View::Замовлення квитка і інформація про рейси"
+			quidu      	"59BD1EF9039D")))
+	    (object Association "$UNNAMED$27"
+		quid       	"59BFCAF201E4"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$28"
+			quid       	"59BFCAF30104"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$29"
+			quid       	"59BFCAF3010A"
+			supplier   	"Use Case View::Замовлення квитка"
+			quidu      	"59BFCA50003F")))
+	    (object Association "$UNNAMED$30"
+		quid       	"59BFCAFA0277"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$31"
+			quid       	"59BFCAFB01FA"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$32"
+			quid       	"59BFCAFB0202"
+			supplier   	"Use Case View::Завантаження багажу"
+			quidu      	"59BD1F0800ED")))
+	    (object Association "$UNNAMED$33"
+		quid       	"59BFCB010191"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$34"
+			quid       	"59BFCB020176"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$35"
+			quid       	"59BFCB02017E"
+			supplier   	"Use Case View::Очікування рейсу"
+			quidu      	"59BD1F14001E")))
+	    (object Association "$UNNAMED$36"
+		quid       	"59BFCB3300D7"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$37"
+			quid       	"59BFCB340149"
+			supplier   	"Use Case View::Ініціалізація"
+			quidu      	"59BFCB2E0337"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$38"
+			quid       	"59BFCB34014B"
+			supplier   	"Use Case View::Клієнт"
+			quidu      	"59BD1D8602FD")))
+	    (object Association "$UNNAMED$39"
+		quid       	"59BFCDBA005E"
+		roles      	(list role_list
+		    (object Role "$UNNAMED$40"
+			quid       	"59BFCDBB01E1"
+			supplier   	"Use Case View::Аеропорт"
+			quidu      	"59BD1F6D0396"
+			is_navigable 	TRUE)
+		    (object Role "$UNNAMED$41"
+			quid       	"59BFCDBB01E9"
+			supplier   	"Use Case View::Очікування рейсу"
+			quidu      	"59BD1F14001E"))))
+	logical_presentations 	(list unit_reference_list
+	    (object UseCaseDiagram "Main"
+		quid       	"59BD1A82028D"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	188
+		items      	(list diagram_item_list
+		    (object UseCaseView "Use Case View::Замовлення квитка і інформація про рейси" @1
+			location   	(1059, 409)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@1
+			    location   	(1059, 547)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Замовлення квитка і інформація про рейси")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"59BD1EF9039D"
+			height     	118)
+		    (object UseCaseView "Use Case View::Завантаження багажу" @2
+			location   	(1082, 819)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@2
+			    location   	(1082, 957)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Завантаження багажу")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"59BD1F0800ED"
+			height     	118)
+		    (object ClassView "Class" "Use Case View::Клієнт" @3
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(170, 822)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@3
+			    location   	(170, 982)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Клієнт")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"59BD1D8602FD"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$0" @4
+			location   	(486, 672)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BD20860220"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$1" @5
+				Parent_View 	@4
+				location   	(403, 57)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	204
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208700C4"
+				client     	@4
+				supplier   	@1
+				vertices   	(list Points
+				    (486, 672)
+				    (745, 553))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$2" @6
+				Parent_View 	@4
+				location   	(403, 57)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208700C6"
+				client     	@4
+				supplier   	@3
+				vertices   	(list Points
+				    (486, 672)
+				    (227, 792))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$3" @7
+			location   	(598, 818)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BD2088025F"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$4" @8
+				Parent_View 	@7
+				location   	(515, 203)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	204
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208900B4"
+				client     	@7
+				supplier   	@2
+				vertices   	(list Points
+				    (598, 818)
+				    (970, 818))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$5" @9
+				Parent_View 	@7
+				location   	(515, 203)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	204
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208900B6"
+				client     	@7
+				supplier   	@3
+				vertices   	(list Points
+				    (598, 818)
+				    (227, 818))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Ініціалізація" @10
+			location   	(1090, 1488)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@10
+			    location   	(1090, 1626)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Ініціалізація")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"59BFCB2E0337"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$36" @11
+			location   	(617, 1145)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BFCB3300D7"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$37" @12
+				Parent_View 	@11
+				location   	(534, 530)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCB340149"
+				client     	@11
+				supplier   	@10
+				vertices   	(list Points
+				    (617, 1145)
+				    (1008, 1429))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$38" @13
+				Parent_View 	@11
+				location   	(534, 530)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCB34014B"
+				client     	@11
+				supplier   	@3
+				vertices   	(list Points
+				    (617, 1145)
+				    (227, 862))
+				line_style 	0)))
+		    (object UseCaseView "Use Case View::Очікування рейсу" @14
+			location   	(1086, 1163)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@14
+			    location   	(1086, 1301)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	630
+			    justify    	0
+			    label      	"Очікування рейсу")
+			icon_style 	"Icon"
+			line_color 	3342489
+			fill_color 	13434879
+			quidu      	"59BD1F14001E"
+			height     	118)
+		    (object AssociationViewNew "$UNNAMED$6" @15
+			location   	(600, 980)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BD208A0307"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$7" @16
+				Parent_View 	@15
+				location   	(517, 365)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	204
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208B015C"
+				client     	@15
+				supplier   	@14
+				vertices   	(list Points
+				    (600, 980)
+				    (974, 1119))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$8" @17
+				Parent_View 	@15
+				location   	(517, 365)
+				font       	(object Font
+				    size       	10
+				    face       	"Arial"
+				    charSet    	204
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BD208B015E"
+				client     	@15
+				supplier   	@3
+				vertices   	(list Points
+				    (600, 980)
+				    (227, 841))
+				line_style 	0)))
+		    (object ClassView "Class" "Use Case View::Аеропорт" @18
+			ShowCompartmentStereotypes 	TRUE
+			IncludeAttribute 	TRUE
+			IncludeOperation 	TRUE
+			location   	(1987, 819)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			label      	(object ItemLabel
+			    Parent_View 	@18
+			    location   	(1987, 979)
+			    anchor_loc 	1
+			    nlines     	2
+			    max_width  	325
+			    justify    	0
+			    label      	"Аеропорт")
+			icon       	"Actor"
+			icon_style 	"Icon"
+			line_color 	3342489
+			quidu      	"59BD1F6D0396"
+			annotation 	8
+			autoResize 	TRUE)
+		    (object AssociationViewNew "$UNNAMED$24" @19
+			location   	(1650, 668)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BFCAE7017A"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$25" @20
+				Parent_View 	@19
+				location   	(472, 396)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCAE801F8"
+				client     	@19
+				supplier   	@18
+				vertices   	(list Points
+				    (1650, 668)
+				    (1928, 790))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$26" @21
+				Parent_View 	@19
+				location   	(472, 396)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCAE801FF"
+				client     	@19
+				supplier   	@1
+				vertices   	(list Points
+				    (1650, 668)
+				    (1372, 546))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$30" @22
+			location   	(1559, 819)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BFCAFA0277"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$31" @23
+				Parent_View 	@22
+				location   	(433, -197)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCAFB01FA"
+				client     	@22
+				supplier   	@18
+				vertices   	(list Points
+				    (1559, 819)
+				    (1928, 819))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$32" @24
+				Parent_View 	@22
+				location   	(433, -197)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCAFB0202"
+				client     	@22
+				supplier   	@2
+				vertices   	(list Points
+				    (1559, 819)
+				    (1190, 819))
+				line_style 	0)))
+		    (object AssociationViewNew "$UNNAMED$39" @25
+			location   	(1560, 978)
+			font       	(object Font
+			    size       	10
+			    face       	"Arial"
+			    charSet    	204
+			    bold       	FALSE
+			    italics    	FALSE
+			    underline  	FALSE
+			    strike     	FALSE
+			    color      	0
+			    default_color 	TRUE)
+			stereotype 	TRUE
+			line_color 	3342489
+			quidu      	"59BFCDBA005E"
+			roleview_list 	(list RoleViews
+			    (object RoleView "$UNNAMED$40" @26
+				Parent_View 	@25
+				location   	(474, -185)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCDBB01E1"
+				client     	@25
+				supplier   	@18
+				vertices   	(list Points
+				    (1560, 978)
+				    (1927, 838))
+				line_style 	0)
+			    (object RoleView "$UNNAMED$41" @27
+				Parent_View 	@25
+				location   	(474, -185)
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"59BFCDBB01E9"
+				client     	@25
+				supplier   	@14
+				vertices   	(list Points
+				    (1560, 978)
+				    (1194, 1119))
+				line_style 	0)))))))
+    root_category 	(object Class_Category "Logical View"
+	quid       	"59BD1A820281"
+	exportControl 	"Public"
+	global     	TRUE
+	subsystem  	"Component View"
+	quidu      	"59BD1A820283"
+	logical_models 	(list unit_reference_list)
+	logical_presentations 	(list unit_reference_list
+	    (object ClassDiagram "Main"
+		quid       	"59BD1A820287"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    root_subsystem 	(object SubSystem "Component View"
+	quid       	"59BD1A820283"
+	physical_models 	(list unit_reference_list)
+	physical_presentations 	(list unit_reference_list
+	    (object Module_Diagram "Main"
+		quid       	"59BD1A82028C"
+		title      	"Main"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list)))
+	category   	"Logical View"
+	quidu      	"59BD1A820281")
+    process_structure 	(object Processes
+	quid       	"59BD1A820284"
+	ProcsNDevs 	(list
+	    (object Process_Diagram "Deployment View"
+		quid       	"59BD1A820286"
+		title      	"Deployment View"
+		zoom       	100
+		max_height 	28350
+		max_width  	21600
+		origin_x   	0
+		origin_y   	0
+		items      	(list diagram_item_list))))
+    properties 	(object Properties
+	quid       	"59BD1A820285"))

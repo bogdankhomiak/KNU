@@ -84,7 +84,7 @@
 	logical_models 	(list unit_reference_list
 	    (object Class "Користувач"
 		quid       	"56E6649E028F"
-		documentation 	"Користувач може переглядати каталог відразу після заходу на сайт, він може реєструватись на сайті, а також може виконувати покупку продукту при переході на окремий комікс."
+		documentation 	"Користувач може переглядати каталог відразу після заходу в додаток, він може реєструватись в додаткуі, а також може виконувати покупку їжі."
 		stereotype 	"Actor"
 		external_docs 	(list external_doc_list
 		    (object external_doc
@@ -92,7 +92,7 @@
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"56EF272102A0"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD")
 		    (object Dependency_Relationship
 			quid       	"56EF274B0396"
@@ -100,7 +100,7 @@
 			quidu      	"56EF1992035F")))
 	    (object Class "Адміністратор"
 		quid       	"56EF19840217"
-		documentation 	"Адміністратор може виконувати видалення, редагування, додання і перегляд контенту, атакож він може купити комікс."
+		documentation 	"Адміністратор може виконувати видалення, редагування, додання і перегляд контенту."
 		stereotype 	"Actor"
 		external_docs 	(list external_doc_list
 		    (object external_doc
@@ -108,15 +108,15 @@
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"56EF2755008E"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329")
 		    (object Dependency_Relationship
 			quid       	"56EF2759003F"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF")
 		    (object Dependency_Relationship
 			quid       	"56EF275C0226"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E")
 		    (object Dependency_Relationship
 			quid       	"56EF276003AE"
@@ -124,23 +124,23 @@
 			quidu      	"56EF1992035F")
 		    (object Dependency_Relationship
 			quid       	"56EF27640337"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD")))
 	    (object UseCase "Перегляд контенту"
 		quid       	"56EF1992035F"
-		documentation 	"Перегляд контенту відбувається при заході на сайт, після авторизації."
+		documentation 	"Перегляд контенту відбувається при входжені в додаток, після авторизації."
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\Перегляд контенту.docx")))
-	    (object UseCase "Додання суші"
+	    (object UseCase "Додання запису"
 		quid       	"56EF19A50329"
 		documentation 	
-|В поданій сторінці "Додання коміксу" потрібно ввести всі данні і натиснути кнопку "Завантажити".
+|В поданій сторінці "Додання запису" потрібно ввести всі данні і натиснути кнопку "Завантажити".
 		
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\додання.docx")))
-	    (object UseCase "Редагування суші"
+	    (object UseCase "Редагування записів"
 		quid       	"56EF19B301DF"
 		documentation 	
 |В поданій сторінці "Редагування коміксу" потрібно ввести всі данні і натиснути кнопку "Завантажити".
@@ -148,7 +148,7 @@
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\редагування.docx")))
-	    (object UseCase "Видалення суші"
+	    (object UseCase "Видалення записів"
 		quid       	"56EF19C0017E"
 		documentation 	
 |В поданій сторінці "Видалити комікс" потрібно підтвердити видалення коміксу натиснувши кнопку "Видалити"
@@ -156,18 +156,19 @@
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\видалення.docx")))
-	    (object UseCase "Замовлення суші"
+	    (object UseCase "Замовлення їжі"
 		quid       	"56EF19CD01CD"
 		documentation 	
-|В поданій сторінці "Покупка коміксу" потрібно ввести всі данні і натиснути кнопку "Купити".
+|В поданій сторінці "Замовлення їжі" потрібно ввести всі данні і натиснути кнопку "Купити".
 		
 		external_docs 	(list external_doc_list
 		    (object external_doc
-			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\покупка.docx")))
+			external_doc_path 	"C:\\Bogdan Khomiak\\KNU\\ООАП\\лаб0\\покупка.docx")))
 	    (object UseCase "Авторизація"
 		quid       	"56EF9E8100A6"
 		documentation 	
-|при вході на сайт усім, його гостям, буде запропоновано авторизуватись. Тому адмін має авторизуватись за своїми адмінськими логіном і паролем, а інші користувачі мають авторизуватись згідно своїх особистих логіна і пароля, які вони отримали після виконання авторизації, якщо в користувача немає логіна і пароля, він має пройти реєстрацію на цьому сайті.
+|при відкритті додатку усім, його гостям, буде запропоновано авторизуватись. Тому адмін має авторизуватись за своїми адмінськими логіном і паролем, а інші користувачі мають авторизуватись згідно своїх особистих логіна і пароля, які вони отримали після виконання авторизації, якщо в користувача немає логіна і пароля, він має пройти реєстрацію в додатку.
+|
 |
 		
 		external_docs 	(list external_doc_list
@@ -180,25 +181,25 @@
 			quidu      	"56EF9E8B00C6")))
 	    (object UseCase "Реєстрація"
 		quid       	"56EF9E8B00C6"
-		documentation 	"Реєстрація потрібна кожному користувачеві, що відвідує сайт вперше, щоб створити свій акаунт. Без створення свого акаунту користувач просто не зможе пройти авторизацію."
+		documentation 	"Реєстрація потрібна кожному користувачеві, що зайшов в додаток вперше, щоб створити свій акаунт. Без створення свого акаунту користувач просто не зможе пройти авторизацію."
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\реєстрація.docx")))
-	    (object UseCase "Пошук суші для видалення"
+	    (object UseCase "Пошук записів для видалення"
 		quid       	"573874C80130"
-		documentation 	"У відповідне поле потрібно ввести назву коміксу для його пошуку, щоб продовжити операцію видалення"
+		documentation 	"У відповідне поле потрібно ввести назву виду суші для його пошуку, щоб продовжити операцію видалення"
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\пошук для видалення.docx")))
-	    (object UseCase "Пошук суші для редагування"
+	    (object UseCase "Пошук записів для редагування"
 		quid       	"573874E40186"
-		documentation 	"У відповідне поле потрібно ввести назву коміксу для його пошуку, щоб продовжити операцію редагування"
+		documentation 	"У відповідне поле потрібно ввести назву виду суші для його пошуку, щоб продовжити операцію редагування"
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\пошук для редагування.docx")))
-	    (object UseCase "Пошук суші для замовлення"
+	    (object UseCase "Пошук їжі для замовлення"
 		quid       	"573875210237"
-		documentation 	"У відповідне поле потрібно ввести назву коміксу для його пошуку, щоб продовжити операцію покупки"
+		documentation 	"У відповідне поле потрібно ввести назву виду суші для його пошуку, щоб продовжити операцію покупки"
 		external_docs 	(list external_doc_list
 		    (object external_doc
 			external_doc_path 	"C:\\Users\\maxim\\Desktop\\хз\\хну\\ОПІ дед\\лаб1\\пошук для покупки.docx")))
@@ -224,7 +225,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$4"
 			quid       	"56EF98A90318"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$5"
@@ -236,7 +237,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$7"
 			quid       	"56EF98B50366"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$8"
@@ -248,7 +249,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$10"
 			quid       	"56EF98B90173"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$11"
@@ -260,7 +261,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$13"
 			quid       	"56EF98BE0367"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$14"
@@ -272,7 +273,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$16"
 			quid       	"56EF99AA018E"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$17"
@@ -380,7 +381,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$43"
 			quid       	"56EFA36D0204"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$44"
@@ -392,7 +393,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$46"
 			quid       	"56EFA370038B"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$47"
@@ -405,7 +406,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$49"
 			quid       	"56EFA3A0007D"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$50"
@@ -418,7 +419,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$52"
 			quid       	"56EFA3AA005B"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$53"
@@ -431,7 +432,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$55"
 			quid       	"56EFA3E80283"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$56"
@@ -444,7 +445,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$58"
 			quid       	"56EFA3EB005A"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$59"
@@ -457,7 +458,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$61"
 			quid       	"56EFA3EF02D4"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$62"
@@ -470,7 +471,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$64"
 			quid       	"56EFA3F202DC"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$65"
@@ -530,7 +531,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$79"
 			quid       	"570A7E4C027C"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$80"
@@ -546,7 +547,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$82"
 			quid       	"570A7E5303D6"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$83"
@@ -562,7 +563,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$85"
 			quid       	"570A7E580151"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$86"
@@ -578,7 +579,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$88"
 			quid       	"570A7E5B0023"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$89"
@@ -591,7 +592,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$91"
 			quid       	"570A86560229"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$92"
@@ -604,7 +605,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$94"
 			quid       	"570A866A0319"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$95"
@@ -617,7 +618,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$97"
 			quid       	"570A866E02F3"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$98"
@@ -630,7 +631,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$100"
 			quid       	"570A86710161"
-			supplier   	"Use Case View::Додання суші"
+			supplier   	"Use Case View::Додання запису"
 			quidu      	"56EF19A50329"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$101"
@@ -654,7 +655,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$106"
 			quid       	"573874F703DD"
-			supplier   	"Use Case View::Пошук суші для редагування"
+			supplier   	"Use Case View::Пошук записів для редагування"
 			quidu      	"573874E40186"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$107"
@@ -666,7 +667,7 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$109"
 			quid       	"573874FA0356"
-			supplier   	"Use Case View::Пошук суші для видалення"
+			supplier   	"Use Case View::Пошук записів для видалення"
 			quidu      	"573874C80130"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$110"
@@ -678,31 +679,31 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$112"
 			quid       	"573874FD01A7"
-			supplier   	"Use Case View::Редагування суші"
+			supplier   	"Use Case View::Редагування записів"
 			quidu      	"56EF19B301DF"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$113"
 			quid       	"573874FD01AB"
-			supplier   	"Use Case View::Пошук суші для редагування"
+			supplier   	"Use Case View::Пошук записів для редагування"
 			quidu      	"573874E40186")))
 	    (object Association "$UNNAMED$114"
 		quid       	"5738750001B9"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$115"
 			quid       	"57387501005D"
-			supplier   	"Use Case View::Видалення суші"
+			supplier   	"Use Case View::Видалення записів"
 			quidu      	"56EF19C0017E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$116"
 			quid       	"573875010061"
-			supplier   	"Use Case View::Пошук суші для видалення"
+			supplier   	"Use Case View::Пошук записів для видалення"
 			quidu      	"573874C80130")))
 	    (object Association "$UNNAMED$117"
 		quid       	"573875330170"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$118"
 			quid       	"57387533039D"
-			supplier   	"Use Case View::Пошук суші для замовлення"
+			supplier   	"Use Case View::Пошук їжі для замовлення"
 			quidu      	"573875210237"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$119"
@@ -714,12 +715,12 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$121"
 			quid       	"573875370138"
-			supplier   	"Use Case View::Замовлення суші"
+			supplier   	"Use Case View::Замовлення їжі"
 			quidu      	"56EF19CD01CD"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$122"
 			quid       	"57387537013E"
-			supplier   	"Use Case View::Пошук суші для замовлення"
+			supplier   	"Use Case View::Пошук їжі для замовлення"
 			quidu      	"573875210237")))
 	    (object Association "$UNNAMED$123"
 		quid       	"5738A8C80243"
@@ -779,13 +780,13 @@
 		max_height 	28350
 		max_width  	21600
 		origin_x   	0
-		origin_y   	0
+		origin_y   	256
 		items      	(list diagram_item_list
 		    (object ClassView "Class" "Use Case View::Адміністратор" @2
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
-			location   	(189, 387)
+			location   	(189, 447)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -798,10 +799,10 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@2
-			    location   	(189, 547)
+			    location   	(189, 607)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	475
+			    max_width  	479
 			    justify    	0
 			    label      	"Адміністратор")
 			icon       	"Actor"
@@ -810,8 +811,8 @@
 			quidu      	"56EF19840217"
 			annotation 	8
 			autoResize 	TRUE)
-		    (object UseCaseView "Use Case View::Редагування суші" @3
-			location   	(1891, 381)
+		    (object UseCaseView "Use Case View::Редагування записів" @3
+			location   	(1947, 444)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -824,19 +825,19 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@3
-			    location   	(1891, 519)
+			    location   	(1947, 582)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Редагування суші")
+			    label      	"Редагування записів")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"56EF19B301DF"
 			height     	118)
 		    (object UseCaseView "Use Case View::Авторизація" @4
-			location   	(502, 384)
+			location   	(502, 444)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -849,7 +850,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@4
-			    location   	(502, 522)
+			    location   	(502, 582)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -861,7 +862,7 @@
 			quidu      	"56EF9E8100A6"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$102" @5
-			location   	(318, 383)
+			location   	(318, 443)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -878,30 +879,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$103" @6
 				Parent_View 	@5
-				location   	(123, -495)
+				location   	(123, -435)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573871EF0325"
 				client     	@5
 				supplier   	@4
 				vertices   	(list Points
-				    (318, 383)
-				    (391, 382))
+				    (318, 443)
+				    (390, 443))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$104" @7
 				Parent_View 	@5
-				location   	(123, -495)
+				location   	(123, -435)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573871EF032F"
 				client     	@5
 				supplier   	@2
 				vertices   	(list Points
-				    (318, 383)
-				    (246, 383))
+				    (318, 443)
+				    (246, 443))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Додання суші" @8
-			location   	(1416, 131)
+		    (object UseCaseView "Use Case View::Додання запису" @8
+			location   	(1416, 191)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -914,19 +915,19 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@8
-			    location   	(1416, 269)
+			    location   	(1416, 329)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Додання суші")
+			    label      	"Додання запису")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"56EF19A50329"
 			height     	118)
-		    (object UseCaseView "Use Case View::Пошук суші для редагування" @9
-			location   	(1405, 381)
+		    (object UseCaseView "Use Case View::Пошук записів для редагування" @9
+			location   	(1405, 441)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -939,19 +940,19 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@9
-			    location   	(1405, 519)
+			    location   	(1405, 579)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Пошук суші для редагування")
+			    label      	"Пошук записів для редагування")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"573874E40186"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$111" @10
-			location   	(1646, 381)
+			location   	(1675, 440)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -968,30 +969,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$112" @11
 				Parent_View 	@10
-				location   	(787, -256)
+				location   	(816, -197)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874FD01A7"
 				client     	@10
 				supplier   	@3
 				vertices   	(list Points
-				    (1646, 381)
-				    (1780, 381))
+				    (1675, 440)
+				    (1837, 440))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$113" @12
 				Parent_View 	@10
-				location   	(787, -256)
+				location   	(816, -197)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874FD01AB"
 				client     	@10
 				supplier   	@9
 				vertices   	(list Points
-				    (1646, 381)
-				    (1513, 381))
+				    (1675, 440)
+				    (1513, 440))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Перегляд контенту" @13
-			location   	(889, 384)
+			location   	(889, 444)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1004,7 +1005,7 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@13
-			    location   	(889, 522)
+			    location   	(889, 582)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
@@ -1016,7 +1017,7 @@
 			quidu      	"56EF1992035F"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$75" @14
-			location   	(693, 384)
+			location   	(693, 444)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1033,30 +1034,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$76" @15
 				Parent_View 	@14
-				location   	(-853, 156)
+				location   	(-853, 216)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"570A7E4800A4"
 				client     	@14
 				supplier   	@13
 				vertices   	(list Points
-				    (693, 384)
-				    (779, 384))
+				    (693, 444)
+				    (777, 444))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$77" @16
 				Parent_View 	@14
-				location   	(-853, 156)
+				location   	(-853, 216)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"570A7E4800A9"
 				client     	@14
 				supplier   	@4
 				vertices   	(list Points
-				    (693, 384)
-				    (610, 384))
+				    (693, 444)
+				    (610, 444))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$99" @17
-			location   	(1138, 262)
+			location   	(1140, 320)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1073,30 +1074,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$100" @18
 				Parent_View 	@17
-				location   	(-1000, -4)
+				location   	(-998, 54)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"570A86710161"
 				client     	@17
 				supplier   	@8
 				vertices   	(list Points
-				    (1138, 262)
-				    (1416, 131))
+				    (1140, 320)
+				    (1284, 252))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$101" @19
 				Parent_View 	@17
-				location   	(-1000, -4)
+				location   	(-998, 54)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"570A86710164"
 				client     	@17
 				supplier   	@13
 				vertices   	(list Points
-				    (1138, 262)
-				    (997, 327))
+				    (1140, 320)
+				    (997, 389))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$105" @20
-			location   	(1145, 380)
+			location   	(1145, 440)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1113,30 +1114,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$106" @21
 				Parent_View 	@20
-				location   	(-89, 77)
+				location   	(-89, 137)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874F703DD"
 				client     	@20
 				supplier   	@9
 				vertices   	(list Points
-				    (1145, 380)
-				    (1293, 379))
+				    (1145, 440)
+				    (1293, 440))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$107" @22
 				Parent_View 	@20
-				location   	(-89, 77)
+				location   	(-89, 137)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874F703DF"
 				client     	@20
 				supplier   	@13
 				vertices   	(list Points
-				    (1145, 380)
-				    (997, 380))
+				    (1145, 440)
+				    (997, 440))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Видалення суші" @23
-			location   	(1910, 693)
+		    (object UseCaseView "Use Case View::Видалення записів" @23
+			location   	(1952, 759)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1149,19 +1150,19 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@23
-			    location   	(1910, 831)
+			    location   	(1952, 897)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Видалення суші")
+			    label      	"Видалення записів")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"56EF19C0017E"
 			height     	118)
-		    (object UseCaseView "Use Case View::Пошук суші для видалення" @24
-			location   	(1415, 696)
+		    (object UseCaseView "Use Case View::Пошук записів для видалення" @24
+			location   	(1415, 756)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1174,19 +1175,19 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@24
-			    location   	(1415, 834)
+			    location   	(1415, 894)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Пошук суші для видалення")
+			    label      	"Пошук записів для видалення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"573874C80130"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$108" @25
-			location   	(1194, 563)
+			location   	(1190, 620)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1203,30 +1204,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$109" @26
 				Parent_View 	@25
-				location   	(-40, 260)
+				location   	(-44, 317)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874FA0356"
 				client     	@25
 				supplier   	@24
 				vertices   	(list Points
-				    (1194, 563)
-				    (1318, 636))
+				    (1190, 620)
+				    (1318, 697))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$110" @27
 				Parent_View 	@25
-				location   	(-40, 260)
+				location   	(-44, 317)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573874FA0358"
 				client     	@25
 				supplier   	@13
 				vertices   	(list Points
-				    (1194, 563)
-				    (889, 384))
+				    (1190, 620)
+				    (1062, 543))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$114" @28
-			location   	(1660, 692)
+			location   	(1681, 755)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1243,30 +1244,30 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$115" @29
 				Parent_View 	@28
-				location   	(1342, 102)
+				location   	(1363, 165)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"57387501005D"
 				client     	@28
 				supplier   	@23
 				vertices   	(list Points
-				    (1660, 692)
-				    (1800, 691))
+				    (1681, 755)
+				    (1840, 755))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$116" @30
 				Parent_View 	@28
-				location   	(1342, 102)
+				location   	(1363, 165)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573875010061"
 				client     	@28
 				supplier   	@24
 				vertices   	(list Points
-				    (1660, 692)
-				    (1523, 692))
+				    (1681, 755)
+				    (1523, 755))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Замовлення суші" @31
-			location   	(1893, 1063)
+		    (object UseCaseView "Use Case View::Замовлення їжі" @31
+			location   	(1946, 1062)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1279,18 +1280,18 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@31
-			    location   	(1893, 1201)
+			    location   	(1946, 1200)
 			    anchor_loc 	1
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Замовлення суші")
+			    label      	"Замовлення їжі")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"56EF19CD01CD"
 			height     	118)
-		    (object UseCaseView "Use Case View::Пошук суші для замовлення" @32
+		    (object UseCaseView "Use Case View::Пошук їжі для замовлення" @32
 			location   	(1430, 1066)
 			font       	(object Font
 			    size       	10
@@ -1309,14 +1310,14 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Пошук суші для замовлення")
+			    label      	"Пошук їжі для замовлення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"573875210237"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$120" @33
-			location   	(1659, 1062)
+			location   	(1686, 1061)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1333,26 +1334,26 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$121" @34
 				Parent_View 	@33
-				location   	(-718, 172)
+				location   	(-691, 171)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"573875370138"
 				client     	@33
 				supplier   	@31
 				vertices   	(list Points
-				    (1659, 1062)
-				    (1781, 1061))
+				    (1686, 1061)
+				    (1834, 1061))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$122" @35
 				Parent_View 	@33
-				location   	(-718, 172)
+				location   	(-691, 171)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"57387537013E"
 				client     	@33
 				supplier   	@32
 				vertices   	(list Points
-				    (1659, 1062)
+				    (1686, 1061)
 				    (1538, 1062))
 				line_style 	0)))
 		    (object ClassView "Class" "Use Case View::Користувач" @36
@@ -1375,7 +1376,7 @@
 			    location   	(147, 1231)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	475
+			    max_width  	479
 			    justify    	0
 			    label      	"Користувач")
 			icon       	"Actor"
@@ -1410,7 +1411,7 @@
 			quidu      	"56EF9E8B00C6"
 			height     	118)
 		    (object AssociationViewNew "$UNNAMED$21" @38
-			location   	(365, 1291)
+			location   	(363, 1288)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -1427,27 +1428,27 @@
 			roleview_list 	(list RoleViews
 			    (object RoleView "$UNNAMED$22" @39
 				Parent_View 	@38
-				location   	(67, 613)
+				location   	(65, 610)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56EF9EB1008A"
 				client     	@38
 				supplier   	@37
 				vertices   	(list Points
-				    (365, 1291)
+				    (363, 1288)
 				    (471, 1398))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$23" @40
 				Parent_View 	@38
-				location   	(67, 613)
+				location   	(65, 610)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56EF9EB1008C"
 				client     	@38
 				supplier   	@36
 				vertices   	(list Points
-				    (365, 1291)
-				    (204, 1128))
+				    (363, 1288)
+				    (255, 1179))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Перегляд контенту" @41
 			location   	(919, 1068)
@@ -1500,7 +1501,7 @@
 				supplier   	@32
 				vertices   	(list Points
 				    (1173, 1065)
-				    (1318, 1064))
+				    (1319, 1065))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$119" @44
 				Parent_View 	@42
@@ -1512,7 +1513,7 @@
 				supplier   	@41
 				vertices   	(list Points
 				    (1173, 1065)
-				    (1027, 1064))
+				    (1027, 1065))
 				line_style 	0)))
 		    (object UseCaseView "Use Case View::Авторизація" @45
 			location   	(533, 1068)
@@ -1565,7 +1566,7 @@
 				supplier   	@45
 				vertices   	(list Points
 				    (312, 1067)
-				    (423, 1066))
+				    (421, 1067))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$128" @48
 				Parent_View 	@46
@@ -1605,7 +1606,7 @@
 				supplier   	@45
 				vertices   	(list Points
 				    (528, 1314)
-				    (528, 1231))
+				    (529, 1231))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$131" @51
 				Parent_View 	@49
@@ -1617,7 +1618,7 @@
 				supplier   	@37
 				vertices   	(list Points
 				    (528, 1314)
-				    (528, 1396))
+				    (528, 1398))
 				line_style 	0)))
 		    (object AssociationViewNew "$UNNAMED$132" @52
 			location   	(724, 1068)
@@ -1645,7 +1646,7 @@
 				supplier   	@41
 				vertices   	(list Points
 				    (724, 1068)
-				    (809, 1068))
+				    (807, 1068))
 				line_style 	0)
 			    (object RoleView "$UNNAMED$134" @54
 				Parent_View 	@52
@@ -1893,7 +1894,7 @@
 				supplier   	"Перегляд"
 				quidu      	"5704A17E02AA"
 				messages   	(list Messages
-				    (object Message "move_sushi( )"
+				    (object Message "move_food( )"
 					quid       	"5704A44B0079"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -1938,10 +1939,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"573875A80195"
-				supplier   	"Пошук суші для редагування"
+				supplier   	"Пошук запису для редагування"
 				quidu      	"57387579035A"
 				messages   	(list Messages
-				    (object Message "find_rename_sushi( )"
+				    (object Message "find_rename_food( )"
 					quid       	"573875A80196"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -1952,10 +1953,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"57387633036F"
-				supplier   	"Пошук суші для видалення"
+				supplier   	"Пошук запису для видалення"
 				quidu      	"57387609008A"
 				messages   	(list Messages
-				    (object Message "find_delete_sushi( )"
+				    (object Message "find_delete_food( )"
 					quid       	"57387A2D035B"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -1966,10 +1967,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"5738769B00E9"
-				supplier   	"Додання суші"
+				supplier   	"Додання запису"
 				quidu      	"5738768C00C4"
 				messages   	(list Messages
-				    (object Message "add_sushi( )"
+				    (object Message "add_food( )"
 					quid       	"5738769B00EA"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2022,7 +2023,7 @@
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Пошук суші для редагування"
+		    (object Object "Пошук запису для редагування"
 			quid       	"57387579035A"
 			collaborators 	(list link_list
 			    (object Link
@@ -2030,7 +2031,7 @@
 				supplier   	"Редагування"
 				quidu      	"5704A58303BB"
 				messages   	(list Messages
-				    (object Message "rename_sushi( )"
+				    (object Message "rename_food( )"
 					quid       	"573875D20072"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2042,7 +2043,7 @@
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Пошук суші для видалення"
+		    (object Object "Пошук запису для видалення"
 			quid       	"57387609008A"
 			collaborators 	(list link_list
 			    (object Link
@@ -2050,7 +2051,7 @@
 				supplier   	"Видалення контенту"
 				quidu      	"570DDE6101BB"
 				messages   	(list Messages
-				    (object Message "delete_sushi( )"
+				    (object Message "delete_food( )"
 					quid       	"57387A430348"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2062,7 +2063,7 @@
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Додання суші"
+		    (object Object "Додання запису"
 			quid       	"5738768C00C4"
 			persistence 	"Transient"
 			creationObj 	TRUE
@@ -2105,7 +2106,7 @@
 				supplier   	"Перегляд"
 				quidu      	"570A86C00367"
 				messages   	(list Messages
-				    (object Message "move_sushi( )"
+				    (object Message "move_food( )"
 					quid       	"570A873102A6"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2122,10 +2123,10 @@
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"573877CB014E"
-				supplier   	"Пошук суші для замовлення"
+				supplier   	"Пошук їжі для замовлення"
 				quidu      	"5738779C034D"
 				messages   	(list Messages
-				    (object Message "move_foundtobuy_sushi( )"
+				    (object Message "move_foundtobuy_food( )"
 					quid       	"573877CB014F"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2159,15 +2160,15 @@
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
-		    (object Object "Пошук суші для замовлення"
+		    (object Object "Пошук їжі для замовлення"
 			quid       	"5738779C034D"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"573877DF0215"
-				supplier   	"Замовлення суші"
+				supplier   	"Замовлення їжі"
 				quidu      	"5738779F0235"
 				messages   	(list Messages
-				    (object Message "buy_sushi( )"
+				    (object Message "buy_food( )"
 					quid       	"573877DF0216"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -2179,7 +2180,7 @@
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Замовлення суші"
+		    (object Object "Замовлення їжі"
 			quid       	"5738779F0235"
 			persistence 	"Transient"
 			creationObj 	FALSE
@@ -5249,8 +5250,8 @@
 		zoom       	100
 		max_height 	28350
 		max_width  	21600
-		origin_x   	3937
-		origin_y   	325
+		origin_x   	0
+		origin_y   	0
 		items      	(list diagram_item_list
 		    (object InterObjView "$UNNAMED$141" @193
 			location   	(217, 225)
@@ -5415,7 +5416,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Пошук суші для редагування" @206
+		    (object InterObjView "Пошук запису для редагування" @206
 			location   	(1863, 225)
 			font       	(object Font
 			    size       	10
@@ -5433,14 +5434,14 @@
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	474
+			    max_width  	406
 			    justify    	0
-			    label      	"Пошук суші для редагування")
+			    label      	"Пошук запису для редагування")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387579035A"
-			width      	492
+			width      	424
 			height     	1679
 			icon_height 	0
 			icon_width 	0
@@ -5498,7 +5499,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Пошук суші для видалення" @211
+		    (object InterObjView "Пошук запису для видалення" @211
 			location   	(2808, 225)
 			font       	(object Font
 			    size       	10
@@ -5516,14 +5517,14 @@
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	368
+			    max_width  	342
 			    justify    	0
-			    label      	"Пошук суші для видалення")
+			    label      	"Пошук запису для видалення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387609008A"
-			width      	386
+			width      	360
 			height     	1679
 			icon_height 	0
 			icon_width 	0
@@ -5588,7 +5589,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Додання суші" @217
+		    (object InterObjView "Додання запису" @217
 			location   	(1339, 228)
 			font       	(object Font
 			    size       	10
@@ -5606,14 +5607,14 @@
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	316
+			    max_width  	282
 			    justify    	0
-			    label      	"Додання суші")
+			    label      	"Додання запису")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5738768C00C4"
-			width      	334
+			width      	300
 			height     	1676
 			icon_height 	0
 			icon_width 	0
@@ -5640,7 +5641,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterMessView "move_sushi( )" @221
+		    (object InterMessView "move_food( )" @221
 			location   	(0, 624)
 			font       	(object Font
 			    size       	10
@@ -5668,9 +5669,9 @@
 			    quidu      	"5704A44B0079"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	304
+			    max_width  	276
 			    justify    	0
-			    label      	"move_sushi( )"
+			    label      	"move_food( )"
 			    pctDist    	0.483483
 			    height     	42
 			    orientation 	0)
@@ -5724,7 +5725,7 @@
 			origin     	(232, 428)
 			terminus   	(548, 428)
 			ordinal    	0)
-		    (object InterMessView "find_rename_sushi( )" @225
+		    (object InterMessView "find_rename_food( )" @225
 			location   	(0, 1106)
 			font       	(object Font
 			    size       	10
@@ -5752,9 +5753,9 @@
 			    quidu      	"573875A80196"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	429
+			    max_width  	394
 			    justify    	0
-			    label      	"find_rename_sushi( )"
+			    label      	"find_rename_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -5766,7 +5767,7 @@
 			origin     	(943, 1106)
 			terminus   	(1847, 1106)
 			ordinal    	4)
-		    (object InterMessView "rename_sushi( )" @227
+		    (object InterMessView "rename_food( )" @227
 			location   	(0, 1211)
 			font       	(object Font
 			    size       	10
@@ -5794,9 +5795,9 @@
 			    quidu      	"573875D20072"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	344
+			    max_width  	313
 			    justify    	0
-			    label      	"rename_sushi( )"
+			    label      	"rename_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -5850,7 +5851,7 @@
 			origin     	(2323, 1373)
 			terminus   	(944, 1373)
 			ordinal    	6)
-		    (object InterMessView "add_sushi( )" @231
+		    (object InterMessView "add_food( )" @231
 			location   	(0, 808)
 			font       	(object Font
 			    size       	10
@@ -5878,9 +5879,9 @@
 			    quidu      	"5738769B00EA"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	276
+			    max_width  	247
 			    justify    	0
-			    label      	"add_sushi( )"
+			    label      	"add_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -5934,7 +5935,7 @@
 			origin     	(1323, 944)
 			terminus   	(944, 944)
 			ordinal    	3)
-		    (object InterMessView "find_delete_sushi( )" @235
+		    (object InterMessView "find_delete_food( )" @235
 			location   	(0, 1493)
 			font       	(object Font
 			    size       	10
@@ -5962,9 +5963,9 @@
 			    quidu      	"57387A2D035B"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	404
+			    max_width  	369
 			    justify    	0
-			    label      	"find_delete_sushi( )"
+			    label      	"find_delete_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -5976,7 +5977,7 @@
 			origin     	(943, 1493)
 			terminus   	(2792, 1493)
 			ordinal    	7)
-		    (object InterMessView "delete_sushi( )" @237
+		    (object InterMessView "delete_food( )" @237
 			location   	(0, 1602)
 			font       	(object Font
 			    size       	10
@@ -6004,9 +6005,9 @@
 			    quidu      	"57387A430348"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	319
+			    max_width  	288
 			    justify    	0
-			    label      	"delete_sushi( )"
+			    label      	"delete_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -6243,7 +6244,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Пошук суші для замовлення" @252
+		    (object InterObjView "Пошук їжі для замовлення" @252
 			location   	(1799, 225)
 			font       	(object Font
 			    size       	10
@@ -6261,14 +6262,14 @@
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	376
+			    max_width  	300
 			    justify    	0
-			    label      	"Пошук суші для замовлення")
+			    label      	"Пошук їжі для замовлення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5738779C034D"
-			width      	394
+			width      	318
 			height     	934
 			icon_height 	0
 			icon_width 	0
@@ -6288,7 +6289,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Замовлення суші" @255
+		    (object InterObjView "Замовлення їжі" @255
 			location   	(2250, 225)
 			font       	(object Font
 			    size       	10
@@ -6308,7 +6309,7 @@
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"Замовлення суші")
+			    label      	"Замовлення їжі")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -6368,7 +6369,7 @@
 			origin     	(646, 598)
 			terminus   	(990, 598)
 			ordinal    	1)
-		    (object InterMessView "move_sushi( )" @259
+		    (object InterMessView "move_food( )" @259
 			location   	(0, 766)
 			font       	(object Font
 			    size       	10
@@ -6396,9 +6397,9 @@
 			    quidu      	"570A873102A6"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	310
+			    max_width  	276
 			    justify    	0
-			    label      	"move_sushi( )"
+			    label      	"move_food( )"
 			    pctDist    	0.498498
 			    height     	44
 			    orientation 	0)
@@ -6452,7 +6453,7 @@
 			origin     	(195, 447)
 			terminus   	(615, 447)
 			ordinal    	0)
-		    (object InterMessView "move_foundtobuy_sushi( )" @263
+		    (object InterMessView "move_foundtobuy_food( )" @263
 			location   	(0, 871)
 			font       	(object Font
 			    size       	10
@@ -6480,9 +6481,9 @@
 			    quidu      	"573877CB014F"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	529
+			    max_width  	485
 			    justify    	0
-			    label      	"move_foundtobuy_sushi( )"
+			    label      	"move_foundtobuy_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -6494,7 +6495,7 @@
 			origin     	(1385, 871)
 			terminus   	(1783, 871)
 			ordinal    	3)
-		    (object InterMessView "buy_sushi( )" @265
+		    (object InterMessView "buy_food( )" @265
 			location   	(0, 979)
 			font       	(object Font
 			    size       	10
@@ -6522,9 +6523,9 @@
 			    quidu      	"573877DF0216"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	282
+			    max_width  	248
 			    justify    	0
-			    label      	"buy_sushi( )"
+			    label      	"buy_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -6654,7 +6655,7 @@
 			    location   	(223, 477)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	475
+			    max_width  	479
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -6667,7 +6668,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Пошук суші для замовлення" @271
+		    (object ObjectView "Пошук їжі для замовлення" @271
 			location   	(1475, 1056)
 			font       	(object Font
 			    size       	10
@@ -6681,24 +6682,24 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@271
-			    location   	(1278, 1005)
+			    location   	(1315, 1005)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	394
+			    max_width  	320
 			    justify    	0
-			    label      	"Пошук суші для замовлення")
+			    label      	"Пошук їжі для замовлення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5738779C034D"
-			width      	412
+			width      	338
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Замовлення суші" @272
+		    (object ObjectView "Замовлення їжі" @272
 			location   	(295, 1056)
 			font       	(object Font
 			    size       	10
@@ -6712,17 +6713,17 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@272
-			    location   	(190, 1005)
+			    location   	(205, 1005)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	210
+			    max_width  	180
 			    justify    	0
-			    label      	"Замовлення суші")
+			    label      	"Замовлення їжі")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5738779F0235"
-			width      	228
+			width      	198
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
@@ -6842,9 +6843,9 @@
 			    quidu      	"570A873102A6"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	300
+			    max_width  	276
 			    justify    	0
-			    label      	"move_sushi( )"
+			    label      	"move_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -6894,9 +6895,9 @@
 			    quidu      	"573877CB014F"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	519
+			    max_width  	485
 			    justify    	0
-			    label      	"move_foundtobuy_sushi( )"
+			    label      	"move_foundtobuy_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -6966,11 +6967,11 @@
 			client     	@271
 			supplier   	@272
 			vertices   	(list Points
-			    (1268, 1056)
-			    (409, 1056))
+			    (1305, 1056)
+			    (394, 1056))
 			line_style 	0)
 		    (object MessView "" @288
-			location   	(838, 1101)
+			location   	(850, 1101)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -6984,7 +6985,7 @@
 			line_color 	3342489
 			label      	(object SegLabel @289
 			    Parent_View 	@288
-			    location   	(838, 1146)
+			    location   	(850, 1146)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -6998,9 +6999,9 @@
 			    quidu      	"573877DF0216"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	272
+			    max_width  	248
 			    justify    	0
-			    label      	"buy_sushi( )"
+			    label      	"buy_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7009,8 +7010,8 @@
 			height     	45
 			orientation 	0
 			dir        	1
-			origin     	(897, 1101)
-			terminus   	(779, 1101))))
+			origin     	(909, 1101)
+			terminus   	(791, 1101))))
 	    (object ObjectDiagram "Collaboration ADMIN"
 		mechanism_ref 	@55
 		quid       	"573879A20046"
@@ -7099,7 +7100,7 @@
 			    location   	(314, 472)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	475
+			    max_width  	479
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -7174,7 +7175,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Пошук суші для редагування" @295
+		    (object ObjectView "Пошук запису для редагування" @295
 			location   	(2274, 939)
 			font       	(object Font
 			    size       	10
@@ -7188,24 +7189,24 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@295
-			    location   	(2067, 888)
+			    location   	(2062, 888)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	414
+			    max_width  	424
 			    justify    	0
-			    label      	"Пошук суші для редагування")
+			    label      	"Пошук запису для редагування")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387579035A"
-			width      	432
+			width      	442
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Пошук суші для видалення" @296
+		    (object ObjectView "Пошук запису для видалення" @296
 			location   	(322, 1448)
 			font       	(object Font
 			    size       	10
@@ -7219,24 +7220,24 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@296
-			    location   	(129, 1397)
+			    location   	(142, 1397)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	386
+			    max_width  	360
 			    justify    	0
-			    label      	"Пошук суші для видалення")
+			    label      	"Пошук запису для видалення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387609008A"
-			width      	404
+			width      	378
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Додання суші" @297
+		    (object ObjectView "Додання запису" @297
 			location   	(2148, 278)
 			font       	(object Font
 			    size       	10
@@ -7250,17 +7251,17 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@297
-			    location   	(2046, 227)
+			    location   	(2032, 227)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	204
+			    max_width  	232
 			    justify    	0
-			    label      	"Додання суші")
+			    label      	"Додання запису")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5738768C00C4"
-			width      	222
+			width      	250
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
@@ -7317,9 +7318,9 @@
 			    quidu      	"5704A44B0079"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	300
+			    max_width  	298
 			    justify    	0
-			    label      	"move_sushi( )"
+			    label      	"move_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7442,10 +7443,10 @@
 			supplier   	@295
 			vertices   	(list Points
 			    (1242, 922)
-			    (2057, 934))
+			    (2052, 934))
 			line_style 	0)
 		    (object MessView "" @309
-			location   	(1651, 884)
+			location   	(1648, 884)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -7459,7 +7460,7 @@
 			line_color 	3342489
 			label      	(object SegLabel @310
 			    Parent_View 	@309
-			    location   	(1652, 840)
+			    location   	(1649, 840)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -7473,9 +7474,9 @@
 			    quidu      	"573875A80196"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	425
+			    max_width  	416
 			    justify    	0
-			    label      	"find_rename_sushi( )"
+			    label      	"find_rename_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7484,8 +7485,8 @@
 			height     	45
 			orientation 	0
 			dir        	1
-			origin     	(1591, 883)
-			terminus   	(1711, 885))
+			origin     	(1588, 883)
+			terminus   	(1708, 885))
 		    (object LinkView "" @311
 			stereotype 	TRUE
 			line_color 	3342489
@@ -7525,9 +7526,9 @@
 			    quidu      	"57387A2D035B"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	400
+			    max_width  	391
 			    justify    	0
-			    label      	"find_delete_sushi( )"
+			    label      	"find_delete_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7577,9 +7578,9 @@
 			    quidu      	"5738769B00EA"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	272
+			    max_width  	269
 			    justify    	0
-			    label      	"add_sushi( )"
+			    label      	"add_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7723,9 +7724,9 @@
 			    quidu      	"573875D20072"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	341
+			    max_width  	335
 			    justify    	0
-			    label      	"rename_sushi( )"
+			    label      	"rename_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -7775,9 +7776,9 @@
 			    quidu      	"57387A430348"
 			    anchor_loc 	1
 			    nlines     	1
-			    max_width  	316
+			    max_width  	310
 			    justify    	0
-			    label      	"delete_sushi( )"
+			    label      	"delete_food( )"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)

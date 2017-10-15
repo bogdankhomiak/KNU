@@ -801,7 +801,7 @@
 			    location   	(189, 547)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	471
+			    max_width  	475
 			    justify    	0
 			    label      	"Адміністратор")
 			icon       	"Actor"
@@ -1375,7 +1375,7 @@
 			    location   	(147, 1231)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	471
+			    max_width  	475
 			    justify    	0
 			    label      	"Користувач")
 			icon       	"Actor"
@@ -1952,7 +1952,7 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"57387633036F"
-				supplier   	"Пошук коміксу для видалення"
+				supplier   	"Пошук суші для видалення"
 				quidu      	"57387609008A"
 				messages   	(list Messages
 				    (object Message "find_delete_sushi( )"
@@ -2042,7 +2042,7 @@
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Пошук коміксу для видалення"
+		    (object Object "Пошук суші для видалення"
 			quid       	"57387609008A"
 			collaborators 	(list link_list
 			    (object Link
@@ -5498,7 +5498,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "Пошук коміксу для видалення" @211
+		    (object InterObjView "Пошук суші для видалення" @211
 			location   	(2808, 225)
 			font       	(object Font
 			    size       	10
@@ -5516,14 +5516,14 @@
 			    fill_color 	13434879
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	438
+			    max_width  	368
 			    justify    	0
-			    label      	"Пошук коміксу для видалення")
+			    label      	"Пошук суші для видалення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387609008A"
-			width      	456
+			width      	386
 			height     	1679
 			icon_height 	0
 			icon_width 	0
@@ -6620,17 +6620,18 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@269
-			    location   	(1390, 624)
+			    location   	(1364, 625)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	162
+			    max_width  	214
 			    justify    	0
 			    label      	"Перегляд")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"570A86C00367"
-			height     	126
+			width      	232
+			height     	125
 			annotation 	4
 			autoResize 	TRUE
 			subobjects 	0
@@ -6653,7 +6654,7 @@
 			    location   	(223, 477)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	471
+			    max_width  	475
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -6810,7 +6811,7 @@
 			supplier   	@269
 			vertices   	(list Points
 			    (1471, 381)
-			    (1471, 611))
+			    (1471, 612))
 			line_style 	0)
 		    (object MessView "" @279
 			location   	(1516, 496)
@@ -6861,11 +6862,11 @@
 			client     	@269
 			supplier   	@271
 			vertices   	(list Points
-			    (1471, 738)
+			    (1471, 737)
 			    (1474, 992))
 			line_style 	0)
 		    (object MessView "" @282
-			location   	(1517, 865)
+			location   	(1518, 865)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -6879,7 +6880,7 @@
 			line_color 	3342489
 			label      	(object SegLabel @283
 			    Parent_View 	@282
-			    location   	(1562, 865)
+			    location   	(1563, 865)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -6904,8 +6905,8 @@
 			height     	45
 			orientation 	0
 			dir        	1
-			origin     	(1516, 805)
-			terminus   	(1518, 925))
+			origin     	(1517, 805)
+			terminus   	(1519, 925))
 		    (object LinkView "" @284
 			stereotype 	TRUE
 			line_color 	3342489
@@ -7098,7 +7099,7 @@
 			    location   	(314, 472)
 			    anchor_loc 	1
 			    nlines     	2
-			    max_width  	471
+			    max_width  	475
 			    justify    	0
 			    label      	"")
 			icon       	"Actor"
@@ -7125,18 +7126,18 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@293
-			    location   	(2187, 1402)
+			    location   	(2146, 1393)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	168
+			    max_width  	251
 			    justify    	0
 			    label      	"Редагування")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5704A58303BB"
-			width      	186
-			height     	126
+			width      	269
+			height     	144
 			annotation 	4
 			autoResize 	TRUE
 			subobjects 	0
@@ -7204,7 +7205,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Пошук коміксу для видалення" @296
+		    (object ObjectView "Пошук суші для видалення" @296
 			location   	(322, 1448)
 			font       	(object Font
 			    size       	10
@@ -7218,17 +7219,17 @@
 			    default_color 	TRUE)
 			label      	(object ItemLabel
 			    Parent_View 	@296
-			    location   	(143, 1397)
+			    location   	(129, 1397)
 			    fill_color 	13434879
 			    nlines     	2
-			    max_width  	358
+			    max_width  	386
 			    justify    	0
-			    label      	"Пошук коміксу для видалення")
+			    label      	"Пошук суші для видалення")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"57387609008A"
-			width      	376
+			width      	404
 			height     	126
 			annotation 	4
 			autoResize 	TRUE
@@ -7337,10 +7338,10 @@
 			supplier   	@293
 			vertices   	(list Points
 			    (1242, 969)
-			    (2177, 1408))
+			    (2136, 1389))
 			line_style 	0)
 		    (object MessView "" @303
-			location   	(1692, 1230)
+			location   	(1671, 1220)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -7354,7 +7355,7 @@
 			line_color 	3342489
 			label      	(object SegLabel @304
 			    Parent_View 	@303
-			    location   	(1675, 1271)
+			    location   	(1654, 1261)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -7379,8 +7380,8 @@
 			height     	45
 			orientation 	1
 			dir        	-1
-			origin     	(1745, 1255)
-			terminus   	(1639, 1205))
+			origin     	(1724, 1245)
+			terminus   	(1618, 1195))
 		    (object LinkView "" @305
 			stereotype 	TRUE
 			line_color 	3342489
@@ -7691,10 +7692,10 @@
 			supplier   	@293
 			vertices   	(list Points
 			    (2273, 1002)
-			    (2271, 1389))
+			    (2271, 1380))
 			line_style 	0)
 		    (object MessView "" @323
-			location   	(2317, 1196)
+			location   	(2317, 1191)
 			font       	(object Font
 			    size       	10
 			    face       	"Arial"
@@ -7708,7 +7709,7 @@
 			line_color 	3342489
 			label      	(object SegLabel @324
 			    Parent_View 	@323
-			    location   	(2362, 1196)
+			    location   	(2362, 1191)
 			    font       	(object Font
 				size       	10
 				face       	"Arial"
@@ -7733,8 +7734,8 @@
 			height     	45
 			orientation 	0
 			dir        	1
-			origin     	(2317, 1136)
-			terminus   	(2317, 1256))
+			origin     	(2317, 1131)
+			terminus   	(2317, 1251))
 		    (object LinkView "" @325
 			stereotype 	TRUE
 			line_color 	3342489

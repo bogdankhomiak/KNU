@@ -1,0 +1,34 @@
+﻿@model Soccer.Models.Player
+@{
+    ViewBag.Title = "Edit";
+}
+<h2>Редагування гравця </h2>
+@using (Html.BeginForm())
+{
+    <fieldset>
+        <legend>Футболіст</legend>
+        @Html.HiddenFor(model => model.Id)
+        <p>
+            Ім’я гравця <br />
+            @Html.EditorFor(model => model.Name)
+        </p>
+        <p>
+            Вік <br />
+            @Html.EditorFor(model => model.Age)
+        </p>
+        <p>
+            Позиція на полі  <br />
+            @Html.EditorFor(model => model.Position)
+        </p>
+        <p>
+            Команда <br />
+            @Html.DropDownListFor(model => model.TeamId, ViewBag.Teams as SelectList)
+        </p>
+        <p>
+            <input type="submit" value="Зберегти" />
+        </p>
+    </fieldset>
+}
+<div>
+    @Html.ActionLink("Повернутися до списку футболістів", "Index")
+</div>

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Soccer.Models.Player>
+@{
+    ViewBag.Title = "Каталог гравців";
+}
+<h2>Каталог гравців</h2>
+<p>
+    @Html.ActionLink("Добавити гравця", "Create")
+</p>
+<table>
+    <tr>
+        <th>Ім'я гравця</th>
+        <th>Вік</th>
+        <th>Позиція на полі</th>
+        <th>Команда</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Team.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Редагувати", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Видалити", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+</table>
+<p>
+    @Html.ActionLink("Каталог команд", "ListTeams")
+</p>

@@ -1,0 +1,25 @@
+﻿@using Library.Models
+@model IEnumerable<Book>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <h3>Распродажа книг</h3>
+    <table>
+        <tr class="header">
+            <td><p>Назва книги</p></td>
+            <td><p>Автор</p></td>
+            <td><p>Ціна</p></td>
+            <td></td>
+        </tr>
+        @foreach (Book b in Model)
+        {
+            <tr>
+                <td><p>@b.Name</p></td>
+                <td><p>@b.Author</p></td>
+                <td><p>@b.Price</p></td>
+                <td><p><a href="/Home/Buy/@b.Id">Купити</a></p></td>
+            </tr>
+        }
+    </table>
+</div>
